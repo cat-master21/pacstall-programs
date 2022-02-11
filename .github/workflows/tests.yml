@@ -31,7 +31,8 @@ jobs:
       - name: Install System Utilities
         run: |
           apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping -y
+          DEBIAN_FRONTEND=noninteractive apt-get install apt-utils curl bash wget git sudo iputils-ping tzdata -y
+          
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
