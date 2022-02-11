@@ -36,6 +36,7 @@ jobs:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
+        timeout-minutes: 5
       - id: checkout
         uses: actions/checkout@v2
       - id: files
