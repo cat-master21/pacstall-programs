@@ -6,4 +6,3 @@ url="https://packages.element.io/debian/pool/main/e/element-desktop/element-desk
 description="Element is a feature-packed Matrix client"
 hash="65577e8cf17cf83a8f6fa531e436024ae347796304a3f69c2f53c3a23b7e6fc1"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
-
