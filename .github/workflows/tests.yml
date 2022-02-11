@@ -39,8 +39,6 @@ jobs:
         timeout-minutes: 5
       - id: checkout
         uses: actions/checkout@v2
-      - id: files
-        uses: jitterbit/get-changed-files@v1
       - name: Setup Test User
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
