@@ -34,7 +34,6 @@ jobs:
           export DEBIAN_FRONTEND=noninteractive
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
           apt-get install apt-utils curl bash wget git sudo iputils-ping tzdata keyboard-configuration -y
-          dpkg-reconfigure --frontend noninteractive keyboard-configuration
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
