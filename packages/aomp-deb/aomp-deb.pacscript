@@ -11,5 +11,7 @@ maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 
 postinst() {
   # patch to fix AOMP variable.
+  ls
+  echo "now patching"
   sudo patch | tee "/usr/lib/aomp/bin/mymcpu" < "./PACSTALL_patchesdir/fix_AOMP.patch" > /dev/null
 }
