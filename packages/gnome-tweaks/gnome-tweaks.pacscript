@@ -20,3 +20,4 @@ build() {
 install() {
           sudo DESTDIR=/usr/src/pacstall/gnome-tweaks ninja -C builddir install -j$(nproc)
 }
+#install ci test!
